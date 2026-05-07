@@ -1,0 +1,741 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Crece — Mapea el plan de carrera de tu organización</title>
+<meta name="description" content="Crece mapea los job descriptions de tu empresa y los conecta con las habilidades de cada persona. Cada equipo ve qué necesita aprender para crecer dentro de la organización." />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Inter+Tight:wght@400;500;600;700;800;900&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+<!-- ========== NAV ========== -->
+<nav class="nav">
+  <div class="nav-inner">
+    <a href="#" class="logo">
+      <span class="logo-mark">
+        <svg viewBox="0 0 24 24" fill="none" stroke="#FFEB00" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M4 18 L10 12 L14 16 L20 6"/>
+          <path d="M14 6 L20 6 L20 12"/>
+        </svg>
+      </span>
+      Crece
+      <span class="nav-divider"></span>
+      <span class="nav-by">by Centauro</span>
+    </a>
+
+    <ul class="nav-links">
+      <li><a href="#como-funciona">Cómo funciona</a></li>
+      <li><a href="#producto">Producto</a></li>
+      <li><a href="#beneficios">Beneficios</a></li>
+      <li><a href="#pricing">Pricing</a></li>
+      <li><a href="#faq">FAQ</a></li>
+    </ul>
+
+    <div class="nav-cta">
+      <a href="#cta" class="btn btn-primary">
+        Pedir demo
+        <svg class="arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M5 12h14M13 5l7 7-7 7"/>
+        </svg>
+      </a>
+    </div>
+  </div>
+</nav>
+
+<!-- ========== HERO ========== -->
+<section class="hero">
+
+  <!-- Centaur illustration -->
+  <div class="hero-centaur" aria-hidden="true">
+    <svg class="centaur" viewBox="0 0 520 520" stroke-width="2.2">
+      <path d="M40 470 L480 470" stroke-dasharray="4 6" opacity="0.4"/>
+      <path d="M120 350 C 120 290, 170 260, 230 260 L 330 260 C 380 260, 410 295, 410 340 L 410 380 C 410 395, 400 405, 385 405 L 365 405"/>
+      <path d="M230 260 C 240 230, 260 215, 280 215"/>
+      <path d="M120 350 L 110 405"/>
+      <path d="M410 340 C 425 335, 435 345, 435 360 L 432 380"/>
+      <path d="M150 360 L 145 460 L 160 460"/>
+      <path d="M195 360 L 198 460 L 213 460"/>
+      <path d="M340 365 L 345 460 L 360 460"/>
+      <path d="M385 360 L 392 460 L 407 460"/>
+      <path d="M140 460 L 165 460"/>
+      <path d="M193 460 L 218 460"/>
+      <path d="M340 460 L 365 460"/>
+      <path d="M388 460 L 412 460"/>
+      <path d="M432 380 C 460 395, 470 425, 455 450"/>
+      <path d="M432 380 C 455 385, 465 410, 450 440"/>
+      <path d="M280 215 C 285 195, 295 178, 305 165 L 305 100"/>
+      <path d="M280 215 C 285 200, 300 195, 315 195"/>
+      <path d="M270 130 L 340 130"/>
+      <path d="M275 132 C 250 130, 220 120, 195 100"/>
+      <path d="M195 100 L 175 92"/>
+      <path d="M338 132 C 360 138, 378 150, 388 168"/>
+      <path d="M155 60 C 130 95, 130 135, 155 170"/>
+      <line x1="155" y1="60" x2="155" y2="170" stroke-dasharray="3 4" opacity="0.6"/>
+      <path d="M155 115 L 80 115"/>
+      <path d="M80 115 L 90 109 M80 115 L 90 121"/>
+      <path d="M155 115 L 165 110 M155 115 L 165 120"/>
+      <circle cx="305" cy="82" r="22"/>
+      <path d="M327 75 C 340 70, 350 75, 358 85" opacity="0.7"/>
+      <path d="M327 85 C 343 85, 355 92, 360 100" opacity="0.5"/>
+      <g opacity="0.85">
+        <path d="M345 240 L 365 230 L 385 215 L 405 195 L 425 170"/>
+        <circle cx="345" cy="240" r="3" fill="currentColor"/>
+        <circle cx="365" cy="230" r="3" fill="currentColor"/>
+        <circle cx="385" cy="215" r="3" fill="currentColor"/>
+        <circle cx="405" cy="195" r="3" fill="currentColor"/>
+        <circle cx="425" cy="170" r="4" fill="#FFEB00" stroke="currentColor" stroke-width="2"/>
+      </g>
+    </svg>
+    <div class="ctr-stamp">CENTAURO · 2026</div>
+  </div>
+
+  <!-- Floating skill chips -->
+  <div class="hero-chips" aria-hidden="true">
+    <div class="float-chip c1">SQL · 92%</div>
+    <div class="float-chip alt c2">Liderazgo · gap</div>
+    <div class="float-chip c3">Product Sense · 78%</div>
+    <div class="float-chip alt c4">→ Senior PM</div>
+  </div>
+
+  <span class="hero-tag reveal">
+    <span class="dot"></span>
+    Un producto de Centauro · Plan de carrera
+  </span>
+
+  <h1 class="reveal delay-1">
+    Cada persona<br/>
+    sabe qué le falta<br/>
+    para ser <span class="underline"><em>quien quiere ser</em></span>.
+  </h1>
+
+  <p class="hero-sub reveal delay-2">
+    Crece mapea los job descriptions de tu empresa y los conecta con las habilidades de cada persona.
+    Así cada equipo ve, en concreto, qué necesita aprender para crecer dentro de la organización.
+  </p>
+
+  <div class="hero-actions reveal delay-3">
+    <a href="#cta" class="btn btn-primary">
+      Pedir demo
+      <svg class="arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+        <path d="M5 12h14M13 5l7 7-7 7"/>
+      </svg>
+    </a>
+    <a href="#producto" class="btn btn-ghost">Ver producto</a>
+  </div>
+
+  <div class="hero-meta">
+    <div class="hero-meta-item">
+      <div class="num" data-target="3.4" data-suffix="x">0x</div>
+      <div class="lbl">retención de talento</div>
+    </div>
+    <div class="hero-meta-item">
+      <div class="num" data-target="62" data-suffix="%">0%</div>
+      <div class="lbl">menos rotación interna fallida</div>
+    </div>
+    <div class="hero-meta-item">
+      <div class="num" data-target="1200" data-suffix="+">0+</div>
+      <div class="lbl">empleados activos en pilotos</div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== MARQUEE ========== -->
+<div class="marquee" aria-hidden="true">
+  <div class="marquee-track">
+    <div class="marquee-item">
+      Mapea tu organización <span class="star">✦</span>
+      Detecta gaps de skills <span class="star">✦</span>
+      Diseña planes de carrera <span class="star">✦</span>
+      Retén el talento <span class="star">✦</span>
+      Mapea tu organización <span class="star">✦</span>
+      Detecta gaps de skills <span class="star">✦</span>
+      Diseña planes de carrera <span class="star">✦</span>
+      Retén el talento <span class="star">✦</span>
+    </div>
+    <div class="marquee-item">
+      Mapea tu organización <span class="star">✦</span>
+      Detecta gaps de skills <span class="star">✦</span>
+      Diseña planes de carrera <span class="star">✦</span>
+      Retén el talento <span class="star">✦</span>
+      Mapea tu organización <span class="star">✦</span>
+      Detecta gaps de skills <span class="star">✦</span>
+      Diseña planes de carrera <span class="star">✦</span>
+      Retén el talento <span class="star">✦</span>
+    </div>
+  </div>
+</div>
+
+<!-- ========== HOW IT WORKS ========== -->
+<section id="como-funciona">
+  <div class="section">
+    <div class="section-header">
+      <div>
+        <div class="section-eyebrow reveal">
+          <span class="num">01</span>
+          <span>Cómo funciona</span>
+        </div>
+        <h2 class="section-title reveal delay-1">De los job descriptions<br/>a un plan de carrera real.</h2>
+      </div>
+      <p class="section-desc reveal delay-2">Cuatro pasos para convertir documentos dispersos en una visión clara y accionable del talento de tu empresa.</p>
+    </div>
+
+    <div class="steps">
+      <div class="step reveal">
+        <div>
+          <div class="step-num">01 / Conecta</div>
+          <div class="step-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M10 13a5 5 0 0 0 7.54.54l3-3a5 5 0 0 0-7.07-7.07l-1.72 1.71"/>
+              <path d="M14 11a5 5 0 0 0-7.54-.54l-3 3a5 5 0 0 0 7.07 7.07l1.71-1.71"/>
+            </svg>
+          </div>
+        </div>
+        <div>
+          <h3>Conectamos<br/>tu organización</h3>
+          <p>Importamos tus job descriptions, organigrama y herramientas de RR.HH. en minutos.</p>
+        </div>
+      </div>
+
+      <div class="step reveal delay-1">
+        <div>
+          <div class="step-num">02 / Mapea</div>
+          <div class="step-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <circle cx="12" cy="12" r="10"/>
+              <path d="M2 12h20M12 2a15 15 0 0 1 0 20M12 2a15 15 0 0 0 0 20"/>
+            </svg>
+          </div>
+        </div>
+        <div>
+          <h3>Extraemos<br/>las habilidades</h3>
+          <p>IA estructura cada rol en habilidades concretas, niveles y áreas. Sin trabajo manual.</p>
+        </div>
+      </div>
+
+      <div class="step reveal delay-2">
+        <div>
+          <div class="step-num">03 / Evalúa</div>
+          <div class="step-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M9 11l3 3L22 4"/>
+              <path d="M21 12v7a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V5a2 2 0 0 1 2-2h11"/>
+            </svg>
+          </div>
+        </div>
+        <div>
+          <h3>Cada persona<br/>se autoevalúa</h3>
+          <p>Evaluaciones cortas, validación del manager. Cada perfil queda mapeado contra el catálogo.</p>
+        </div>
+      </div>
+
+      <div class="step reveal delay-3">
+        <div>
+          <div class="step-num">04 / Crece</div>
+          <div class="step-icon">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M3 17l6-6 4 4 8-8"/>
+              <path d="M14 7h7v7"/>
+            </svg>
+          </div>
+        </div>
+        <div>
+          <h3>Mostramos<br/>el siguiente paso</h3>
+          <p>Cada empleado ve qué roles puede aspirar y exactamente qué habilidades le faltan para llegar.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== DEMO ========== -->
+<section id="producto" style="background: var(--yellow);">
+  <div class="section" style="padding-top: 40px; padding-bottom: 60px;">
+    <div class="demo-section">
+      <div class="section-header" style="margin-bottom: 20px;">
+        <div>
+          <div class="section-eyebrow reveal" style="color: var(--yellow);">
+            <span class="num">02</span>
+            <span>Producto en vivo</span>
+          </div>
+          <h2 class="section-title reveal delay-1">Mira tu plan<br/>de carrera, en serio.</h2>
+        </div>
+        <p class="section-desc reveal delay-2">Esto es lo que ve una persona dentro de Crece: su perfil, los roles compatibles y los gaps exactos que separan dónde está de dónde quiere llegar.</p>
+      </div>
+
+      <div class="demo-grid">
+        <!-- LEFT PANEL: Skills profile -->
+        <div class="demo-panel reveal">
+          <div class="demo-panel-head">
+            <div class="avatar">LM</div>
+            <div>
+              <div class="demo-name">Lucía Méndez</div>
+              <div class="demo-role">Product Designer · Diseño</div>
+            </div>
+          </div>
+
+          <div class="role-switch">
+            <div class="from">
+              <div class="lbl">Hoy</div>
+              <div class="val">Product Designer</div>
+            </div>
+            <div class="arr">→</div>
+            <div class="to">
+              <div class="lbl">Objetivo</div>
+              <div class="val">Senior Product<br/>Designer</div>
+            </div>
+          </div>
+
+          <div class="skill-block">
+            <h5>Habilidades — Hard skills</h5>
+            <div class="skill">
+              <div class="skill-row">
+                <span class="skill-name">Design Systems</span>
+                <span class="skill-pct">90%</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-fill" data-fill="90"></div>
+                <div class="skill-target" style="left: 80%;"></div>
+              </div>
+            </div>
+            <div class="skill">
+              <div class="skill-row">
+                <span class="skill-name">Prototipado avanzado</span>
+                <span class="skill-pct">75%</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-fill" data-fill="75"></div>
+                <div class="skill-target" style="left: 85%;"></div>
+              </div>
+            </div>
+            <div class="skill">
+              <div class="skill-row">
+                <span class="skill-name">User research</span>
+                <span class="skill-pct">60%</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-fill gap" data-fill="60"></div>
+                <div class="skill-target" style="left: 90%;"></div>
+              </div>
+            </div>
+          </div>
+
+          <div class="skill-block">
+            <h5>Habilidades — Soft skills</h5>
+            <div class="skill">
+              <div class="skill-row">
+                <span class="skill-name">Mentoring</span>
+                <span class="skill-pct">45%</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-fill gap" data-fill="45"></div>
+                <div class="skill-target" style="left: 80%;"></div>
+              </div>
+            </div>
+            <div class="skill">
+              <div class="skill-row">
+                <span class="skill-name">Strategic thinking</span>
+                <span class="skill-pct">55%</span>
+              </div>
+              <div class="skill-bar">
+                <div class="skill-fill gap" data-fill="55"></div>
+                <div class="skill-target" style="left: 85%;"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- RIGHT PANEL: Career path map -->
+        <div class="demo-canvas reveal delay-1">
+          <div class="canvas-head">
+            <div class="canvas-tabs">
+              <div class="canvas-tab active">Mapa de carrera</div>
+              <div class="canvas-tab">Skills</div>
+              <div class="canvas-tab">Plan</div>
+            </div>
+            <div class="canvas-meta">
+              <span class="live-dot"></span>
+              <span>actualizado en vivo</span>
+            </div>
+          </div>
+
+          <div class="path-map">
+            <svg class="path-svg" viewBox="0 0 600 460" preserveAspectRatio="none">
+              <defs>
+                <marker id="arr" viewBox="0 0 10 10" refX="8" refY="5" markerWidth="6" markerHeight="6" orient="auto">
+                  <path d="M0,0 L10,5 L0,10 z" fill="#FFEB00"/>
+                </marker>
+              </defs>
+              <path d="M 130 230 Q 280 90 470 90" stroke="#FFEB00" stroke-width="2" fill="none" stroke-dasharray="6 6" marker-end="url(#arr)" opacity="0.5"/>
+              <path d="M 130 230 Q 280 230 470 230" stroke="#FFEB00" stroke-width="2.5" fill="none" marker-end="url(#arr)"/>
+              <path d="M 130 230 Q 280 370 470 370" stroke="#FFEB00" stroke-width="2" fill="none" stroke-dasharray="6 6" marker-end="url(#arr)" opacity="0.5"/>
+            </svg>
+
+            <div class="role-node current" style="left: 0; top: 42%;">
+              <div class="role-title">Product Designer</div>
+              <div class="role-area">Diseño · L3</div>
+              <div class="role-match"><span class="match-dot"></span>tu posición</div>
+            </div>
+
+            <div class="role-node option" style="right: 4%; top: 8%;">
+              <div class="role-title">Design Manager</div>
+              <div class="role-area">Diseño · L5</div>
+              <div class="role-match">
+                <span class="match-dot" style="background: #F5C518;"></span>54% match
+              </div>
+            </div>
+
+            <div class="role-node target" style="right: 4%; top: 42%;">
+              <div class="role-title">Senior Product Designer</div>
+              <div class="role-area">Diseño · L4</div>
+              <div class="role-match"><span class="match-dot"></span>78% match · 5 gaps</div>
+            </div>
+
+            <div class="role-node option" style="right: 4%; top: 76%;">
+              <div class="role-title">Product Manager</div>
+              <div class="role-area">Producto · L4</div>
+              <div class="role-match">
+                <span class="match-dot" style="background: #F5C518;"></span>61% match · cross
+              </div>
+            </div>
+          </div>
+
+          <div class="demo-stats">
+            <div class="demo-stat">
+              <div class="num" data-target="78" data-suffix="%">0%</div>
+              <div class="lbl">match con rol objetivo</div>
+            </div>
+            <div class="demo-stat">
+              <div class="num" data-target="5" data-suffix="">0</div>
+              <div class="lbl">skills por desarrollar</div>
+            </div>
+            <div class="demo-stat">
+              <div class="num" data-target="9" data-suffix=" m">0 m</div>
+              <div class="lbl">tiempo estimado</div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== BENEFITS ========== -->
+<section id="beneficios">
+  <div class="section">
+    <div class="section-header">
+      <div>
+        <div class="section-eyebrow reveal">
+          <span class="num">03</span>
+          <span>Para HR y dirección</span>
+        </div>
+        <h2 class="section-title reveal delay-1">Decisiones de talento<br/>con datos, no con intuición.</h2>
+      </div>
+      <p class="section-desc reveal delay-2">Crece convierte la conversación de carrera en algo medible. Tu equipo de People y los líderes ven en tiempo real dónde está la organización y qué necesita.</p>
+    </div>
+
+    <div class="benefits-grid">
+      <div class="benefit reveal">
+        <div>
+          <div class="benefit-num">// 01</div>
+          <div class="benefit-stat" data-stat="3.4" data-suffix="x" data-prefix="">0x</div>
+        </div>
+        <div>
+          <h3>Más retención del talento clave</h3>
+          <p>Las personas que ven un futuro claro en tu empresa se quedan. Los pilotos muestran 3.4x más retención en tramos críticos.</p>
+        </div>
+      </div>
+
+      <div class="benefit reveal delay-1">
+        <div>
+          <div class="benefit-num">// 02</div>
+          <div class="benefit-stat" data-stat="62" data-suffix="%">0%</div>
+        </div>
+        <div>
+          <h3>Menos rotación interna fallida</h3>
+          <p>Los movimientos internos se hacen sobre datos, no sobre quién pidió primero. Menos transiciones que no funcionan.</p>
+        </div>
+      </div>
+
+      <div class="benefit reveal delay-2">
+        <div>
+          <div class="benefit-num">// 03</div>
+          <div class="benefit-stat" data-stat="48" data-suffix=" h">0 h</div>
+        </div>
+        <div>
+          <h3>Menos horas en mapeos manuales</h3>
+          <p>Lo que antes tomaba semanas a tu equipo de People — mapear roles, skills y gaps — ahora vive solo y se actualiza solo.</p>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== PRICING ========== -->
+<section id="pricing">
+  <div class="section">
+    <div class="section-header">
+      <div>
+        <div class="section-eyebrow reveal">
+          <span class="num">04</span>
+          <span>Pricing</span>
+        </div>
+        <h2 class="section-title reveal delay-1">Un precio simple,<br/>por persona activa.</h2>
+      </div>
+      <p class="section-desc reveal delay-2">Sin setup fees ni sorpresas. Empezás con un piloto y escalás cuando estés listo.</p>
+    </div>
+
+    <div class="pricing-grid">
+      <div class="price-card reveal">
+        <div class="price-name">Starter</div>
+        <div class="price-amount">$4<span class="per">/persona/mes</span></div>
+        <p class="price-desc">Para equipos que quieren empezar a mapear su talento.</p>
+        <ul class="price-features">
+          <li><span class="check">✓</span>Hasta 100 empleados</li>
+          <li><span class="check">✓</span>Mapeo automático de JDs</li>
+          <li><span class="check">✓</span>Auto-evaluación de skills</li>
+          <li><span class="check">✓</span>Vista de gaps individual</li>
+          <li><span class="check">✓</span>Soporte por email</li>
+        </ul>
+        <a href="#cta" class="btn btn-ghost price-cta">Empezar piloto</a>
+      </div>
+
+      <div class="price-card featured reveal delay-1">
+        <span class="badge">MÁS ELEGIDO</span>
+        <div class="price-name">Growth</div>
+        <div class="price-amount">$8<span class="per">/persona/mes</span></div>
+        <p class="price-desc">Para empresas en crecimiento que quieren mover talento internamente.</p>
+        <ul class="price-features">
+          <li><span class="check">✓</span>Hasta 1.000 empleados</li>
+          <li><span class="check">✓</span>Todo lo de Starter</li>
+          <li><span class="check">✓</span>Rutas de carrera cross-área</li>
+          <li><span class="check">✓</span>Dashboard para managers</li>
+          <li><span class="check">✓</span>Integraciones HRIS (BambooHR, Workday)</li>
+          <li><span class="check">✓</span>Customer Success dedicado</li>
+        </ul>
+        <a href="#cta" class="btn btn-light price-cta">Pedir demo</a>
+      </div>
+
+      <div class="price-card reveal delay-2">
+        <div class="price-name">Enterprise</div>
+        <div class="price-amount">A medida</div>
+        <p class="price-desc">Para organizaciones globales con necesidades específicas.</p>
+        <ul class="price-features">
+          <li><span class="check">✓</span>Empleados ilimitados</li>
+          <li><span class="check">✓</span>Todo lo de Growth</li>
+          <li><span class="check">✓</span>SSO, SCIM y SOC 2</li>
+          <li><span class="check">✓</span>Modelos de skills personalizados</li>
+          <li><span class="check">✓</span>API y data warehouse</li>
+          <li><span class="check">✓</span>SLA y soporte 24/7</li>
+        </ul>
+        <a href="#cta" class="btn btn-ghost price-cta">Hablar con ventas</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== FAQ ========== -->
+<section id="faq">
+  <div class="section">
+    <div class="section-header" style="justify-content: center; text-align: center;">
+      <div style="margin: 0 auto;">
+        <div class="section-eyebrow reveal" style="justify-content: center;">
+          <span class="num">05</span>
+          <span>Preguntas frecuentes</span>
+        </div>
+        <h2 class="section-title reveal delay-1" style="text-align: center; margin: 0 auto;">Resolvemos las dudas<br/>antes de la demo.</h2>
+      </div>
+    </div>
+
+    <div class="faq">
+      <div class="faq-item reveal">
+        <div class="faq-q">
+          <span>¿Cómo extraen las habilidades de nuestros job descriptions?</span>
+          <div class="faq-icon">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+              <path d="M12 5v14M5 12h14"/>
+            </svg>
+          </div>
+        </div>
+        <div class="faq-a">Subís tus JDs en cualquier formato (PDF, Notion, Confluence, Google Docs). Nuestro modelo los normaliza contra un taxonomy de skills, los agrupa por familia y los conecta a un catálogo único — siempre con tu equipo validando antes de publicar.</div>
+      </div>
+
+      <div class="faq-item reveal">
+        <div class="faq-q">
+          <span>¿Cuánto tarda implementar Crece en mi empresa?</span>
+          <div class="faq-icon">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+              <path d="M12 5v14M5 12h14"/>
+            </svg>
+          </div>
+        </div>
+        <div class="faq-a">Un piloto de hasta 100 personas se levanta en 2 semanas: importación de JDs, configuración del catálogo y onboarding de empleados. Para implementaciones globales con HRIS y SSO, contá con 4–6 semanas.</div>
+      </div>
+
+      <div class="faq-item reveal">
+        <div class="faq-q">
+          <span>¿Se integra con nuestro HRIS actual?</span>
+          <div class="faq-icon">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+              <path d="M12 5v14M5 12h14"/>
+            </svg>
+          </div>
+        </div>
+        <div class="faq-a">Sí. Tenemos integraciones nativas con BambooHR, Workday, Personio, HiBob, SAP SuccessFactors y otros. Si usás algo distinto, podemos conectar vía API o CSV.</div>
+      </div>
+
+      <div class="faq-item reveal">
+        <div class="faq-q">
+          <span>¿Cómo manejan los datos sensibles de empleados?</span>
+          <div class="faq-icon">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+              <path d="M12 5v14M5 12h14"/>
+            </svg>
+          </div>
+        </div>
+        <div class="faq-a">SOC 2 Type II, GDPR-compliant y data residency en EU o US. Los datos personales nunca se usan para entrenar modelos. Tu equipo controla qué información ve cada rol.</div>
+      </div>
+
+      <div class="faq-item reveal">
+        <div class="faq-q">
+          <span>¿Reemplaza nuestro sistema de evaluación de desempeño?</span>
+          <div class="faq-icon">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+              <path d="M12 5v14M5 12h14"/>
+            </svg>
+          </div>
+        </div>
+        <div class="faq-a">No. Crece se enfoca en el plan de carrera y skills — complementa tu sistema de performance, no lo reemplaza. De hecho, muchos clientes usan los datos de Crece como input para conversaciones de promoción.</div>
+      </div>
+
+      <div class="faq-item reveal">
+        <div class="faq-q">
+          <span>¿Las personas pueden ver roles fuera de su área?</span>
+          <div class="faq-icon">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+              <path d="M12 5v14M5 12h14"/>
+            </svg>
+          </div>
+        </div>
+        <div class="faq-a">Sí, ese es uno de los puntos fuertes. Cada persona ve no solo cómo crecer en su área sino también qué roles cross-área son compatibles, basado en sus skills actuales y los gaps reales para llegar.</div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ========== FINAL CTA ========== -->
+<div style="background: var(--yellow); padding: 0 0 40px;">
+  <section class="final-cta" id="cta">
+    <div class="final-cta-centaur" aria-hidden="true">
+      <svg class="centaur" viewBox="0 0 520 320" stroke-width="2">
+        <path d="M120 230 C 120 180, 170 155, 230 155 L 330 155 C 380 155, 410 185, 410 220 L 410 250 C 410 262, 402 270, 390 270 L 372 270"/>
+        <path d="M230 155 C 240 130, 260 118, 280 118"/>
+        <path d="M120 230 L 110 270"/>
+        <path d="M410 220 C 425 215, 435 225, 435 238"/>
+        <path d="M150 235 L 145 305 L 160 305"/>
+        <path d="M195 235 L 198 305 L 213 305"/>
+        <path d="M340 240 L 345 305 L 360 305"/>
+        <path d="M385 235 L 392 305 L 407 305"/>
+        <path d="M432 250 C 460 263, 470 285, 455 305"/>
+        <path d="M280 118 C 285 100, 295 86, 305 76 L 305 30"/>
+        <path d="M270 50 L 340 50"/>
+        <path d="M275 52 C 250 50, 220 42, 195 28"/>
+        <path d="M338 52 C 360 58, 378 68, 388 84"/>
+        <path d="M155 0 C 130 25, 130 55, 155 85"/>
+        <path d="M155 42 L 80 42"/>
+        <circle cx="305" cy="18" r="16"/>
+      </svg>
+    </div>
+
+    <h2 class="reveal" style="position: relative; z-index: 1;">
+      Empezá a mover talento<br/>con datos.
+    </h2>
+    <p class="reveal delay-1" style="position: relative; z-index: 1;">
+      Demo de 30 minutos con tu equipo. Te mostramos un mapeo real con tus job descriptions.
+    </p>
+    <div class="actions reveal delay-2" style="position: relative; z-index: 1;">
+      <a href="#" class="btn btn-light">
+        Pedir demo
+        <svg class="arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M5 12h14M13 5l7 7-7 7"/>
+        </svg>
+      </a>
+      <a href="#" class="btn" style="background: transparent; color: var(--yellow); border: 1px solid rgba(255,235,0,0.5);">
+        Hablar con ventas
+      </a>
+    </div>
+  </section>
+</div>
+
+<!-- ========== FOOTER ========== -->
+<footer>
+  <div class="footer-inner">
+    <div class="footer-top">
+      <div class="footer-brand">
+        <a href="#" class="logo">
+          <span class="logo-mark">
+            <svg viewBox="0 0 24 24" fill="none" stroke="#FFEB00" stroke-width="3" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M4 18 L10 12 L14 16 L20 6"/>
+              <path d="M14 6 L20 6 L20 12"/>
+            </svg>
+          </span>
+          Crece
+        </a>
+        <p>La plataforma de plan de carrera para empresas que quieren retener y desarrollar talento.</p>
+      </div>
+
+      <div class="footer-col">
+        <h5>Producto</h5>
+        <ul>
+          <li><a href="#como-funciona">Cómo funciona</a></li>
+          <li><a href="#producto">Demo</a></li>
+          <li><a href="#pricing">Pricing</a></li>
+          <li><a href="#">Integraciones</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h5>Empresa</h5>
+        <ul>
+          <li><a href="#">Sobre nosotros</a></li>
+          <li><a href="#">Clientes</a></li>
+          <li><a href="#">Blog</a></li>
+          <li><a href="#">Contacto</a></li>
+        </ul>
+      </div>
+
+      <div class="footer-col">
+        <h5>Recursos</h5>
+        <ul>
+          <li><a href="#">Centro de ayuda</a></li>
+          <li><a href="#">Seguridad</a></li>
+          <li><a href="#">API</a></li>
+          <li><a href="#">Changelog</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <div class="big-wordmark">Crece.</div>
+
+    <div class="footer-bottom">
+      <span class="opacity" style="display: inline-flex; align-items: center; gap: 10px;">
+        <svg width="22" height="22" viewBox="0 0 520 520" stroke="currentColor" fill="none" stroke-width="22" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M120 350 C 120 290, 170 260, 230 260 L 330 260 C 380 260, 410 295, 410 340 L 410 380"/>
+          <path d="M150 360 L 145 460 M195 360 L 198 460 M340 365 L 345 460 M385 360 L 392 460"/>
+          <path d="M280 215 C 285 195, 295 178, 305 165 L 305 100"/>
+          <circle cx="305" cy="82" r="22"/>
+          <path d="M155 60 C 130 95, 130 135, 155 170 M155 115 L 80 115"/>
+        </svg>
+        © 2026 Centauro · Crece es un producto de Centauro
+      </span>
+      <span class="opacity">Términos · Privacidad · Cookies</span>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
